@@ -59,7 +59,7 @@ class Chess:
         piece = self.board[from_row][from_col]
         # Here, you should call a method from the piece class to get possible moves
         # Assuming each piece class has a method called possible_moves(self, board)
-        possibleMoves = piece.possible_moves(self.board)
+        possibleMoves = piece.possible_moves()
         print(possibleMoves)
         if to in possibleMoves:
             self.board[to_row][to_col] = self.board[from_row][from_col]
@@ -81,5 +81,5 @@ class Chess:
         piece = self.board[from_row][from_col]
         # Here, you should call a method from the piece class to get possible moves
         # Assuming each piece class has a method called possible_moves(self, board)
-        possibleMoves = piece.possible_moves(self.board)
+        possibleMoves = piece.possible_moves()
         print(possibleMoves)
