@@ -7,7 +7,7 @@ ch.load()
 
 while True:
     ch.show()
-    fom = input("piece from: ")
+    fom = input("Enter Move From: ")
     ch.checkMoves(fom)
-    to = input("piece to: ")
+    to = input("To: ")
     ch.move(fom,to)
